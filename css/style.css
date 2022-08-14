@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ibarra+Real+Nova&display=swap');
+
+* { 
+    box-sizing: border-box;
+} 
+
+
+body  { 
+    margin: 0px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 18px;
+}
+
+
+main  { 
+    min-height: 100vh;
+}
+
+
+header  { 
+    background:#FAC140; 
+    position: fixed;  
+    width: 100%;
+    top: 0px;
+    padding: 10px 15px 5px 15px;
+}
+
+
+nav { 
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+} 
+
+
+nav a { 
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+
+nav a:hover { 
+    color: #DE741C;
+    text-decoration: underline 1px;
+} 
+
+
+footer  { 
+min-height: 80px;
+background: #FAC140;
+text-align: center;
+color: black;
+padding-top: 35px;
+}
+
+
+p { 
+    line-height: 150%;
+    text-indent: 30px;
+} 
+
+p::first-letter { 
+  font-size: 25px;
+} 
+
+
+li  {
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-image: linear-gradient(orange, orange);
+ }
+
+
+h1, h2, h3, h4, h5, h6 { 
+    margin-top: 0px;
+    font-family: 'Dancing Script', cursive;
+} 
+
+
+h1 {
+    font-size: 350%;
+ } 
+
+
+ h2 { 
+    font-size: 200%;
+ } 
+
+
+section  {
+    padding: 90px 15%;
+ }
+
+
+.logo  {
+height: 50px;
+}
+
+
+#index {
+    background: linear-gradient(#00000020, #00000020), url('../images/index.jpg');
+    background-size: cover;
+    min-height: 100vh;
+ } 
+
+
+ .index-info { 
+margin-top: 30vh;
+text-align: right;
+ }
+
+
+ .index-info h1 {
+    font-size: 350%;
+    color:black;
+    border: 2px solid #FAC140;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fac2407f;
+  }
+
+
+  .link-index { 
+    color: rgb(247, 196, 27);
+    text-decoration: underline orange 2px;
+    font-size: 20px;
+  }
+
+
+  .link-index:hover { 
+    color: black;
+  }
+
+
+  .centered  { 
+    text-align: center;
+  } 
+
+  .vframe  { 
+    width: 100%;
+    height: 30vw;
+    border: 2px solid orange;
+    border-radius: 5px;
+    box-shadow: box-shadow rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+
+  .loc  { 
+overflow: auto;
+border-bottom: 2px orange dashed;
+margin-bottom: 15px;
+  }
+
+
+  .loc img  {
+    height: 18vh;
+    width: 18vh;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+   }
+
+   .galerie {
+    margin-top: 30px;
+    height: 180vh;
+    border: 2px solid orange;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 40px;
+   }
+
+   .galerie img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    transition: all 1s;
+   }
+
+   .galerie img:hover  { 
+    filter: contrast(135%) drop-shadow(4px 3px 5px orange);
+    border-radius: 20px;
+    transform:translateX(-5px) scale(1.2);
+   }
+
+
+   .harta  {
+    width: 100%;
+    height: 35vh;
+    border-radius: 10px;
+    background-color: #FAC140;
+    }
+
+
+    .row  {
+    overflow: auto;
+     }
+
+     ::selection {
+      background-color: #FAC140;
+      }
+
+     
+     [class^="col-"]  {
+      float: left;
+      padding: 0px 10px;
+      }
+
+
+     .col-50  { 
+      width: 50%;
+     }
+
+
+     .contacte, .cform  {
+      border: 2px solid rgba(255, 166, 0, 0.457);
+      border-radius: 5px;
+      background-color: #fac24017;
+      padding: 5px 5%;
+      height: 325px;
+      margin-bottom: 15px;
+      }
+
+
+      .cform input, .cform textarea  {
+        width: 100%;
+        font-size: 15px;
+        font-family: inherit;
+        margin-bottom: 10px;
+        padding: 4px 6px;
+       }
+
+       .decor { 
+        text-decoration: underline orange;
+       } 
+
+
+       #hamburger  { 
+        color: black;
+        font-size: 28px;
+        position: absolute;
+        right: 22px;
+        top: 24px;
+        cursor: pointer;
+        display: none;
+       } 
+
+
+       @media (max-width: 800px) {
+
+         body  { 
+          font-size: 16px;
+         } 
+
+
+        section  { 
+          padding: 90px 10px;
+        } 
+
+        .index-info h1  { 
+          font-size: 250%;
+        } 
+
+        .vframe  { 
+          height: 55vw;
+        } 
+
+        [class^="col-"] { 
+        width: 100% !important;
+        } 
+
+       nav a  { 
+        display: none;
+       } 
+
+       nav.mobile a  { 
+       display: block;
+       text-align: center;
+       margin-top: 12px;
+       } 
+
+       nav  { 
+        display: block;
+       } 
+
+        #hamburger  { 
+          display: block;
+        } 
+      }
